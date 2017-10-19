@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+	</head>
+	<body>
+			<input type="text" id="inp">
+			<button id="btn">提交</button>
+		<script type="text/javascript">
+		  var inp =document.getElementById('inp')
+		  var btn =document.getElementById('btn')
+		   inp.oninput = function (){
+		   		if(inp.value.length<60){
+		   			btn.onclick = function(){
+		   				alert('提交成功')
+		   			}
+		   		}else{
+		   			btn.disabled=true;
+		   		}
+		   }
+		</script>
+	</body>
+
+</html>
